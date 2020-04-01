@@ -70,7 +70,9 @@ app.post("/failure", function(req, res) {
   res.redirect("/")
 })
 
-app.listen(3000, function () {
+//listening to local port on 3000
+// process.env.port will allow heroku to create their own server
+app.listen(process.env.PORT || 3000, function () {
   console.log("server is running on port 3000")
 });
 
