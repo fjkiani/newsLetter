@@ -42,7 +42,7 @@ app.post("/", (req, res) => {
   const options = {
     method: "POST",
     //provide authentication SomeValue:ApiKey:
-    auth: "fahad1:d0b3707298a90965cf19f917edcbd1ab-us19" 
+    auth: "fahad1:9720143faa21879917fed04069cbc30e-us19" 
   }
 
   const request = https.request(url,options, function(response){
@@ -74,5 +74,3 @@ app.listen(3000, function () {
   console.log("server is running on port 3000")
 });
 
-// api key: d0b3707298a90965cf19f917edcbd1ab-us19
-// unique key: fdc6f83c94
